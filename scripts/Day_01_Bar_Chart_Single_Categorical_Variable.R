@@ -1,7 +1,10 @@
-# Load required packages 
-library(tidyverse) # for summarizing the data
-library(ggsci) # for color palettes of scientific journals
-library(ggpubr) # for publication ready themes 
+# tidyverse for summarizing the data
+library(tidyverse) 
+# ggsci for color palettes of scientific journals
+library(ggsci) 
+# ggpubr for publication ready themes 
+library(ggpubr) 
+# gapminder for built-in gapminder dataset
 library(gapminder)
 
 # Single Categorical Variable Visualization
@@ -14,5 +17,5 @@ gapminder %>%
        y = "Counts")+
   theme_pubr()
 
-# Save Figure 
+# Save Figure (.tiff, .png, .pdf, .jpg)
 ggsave("outputs/test.tiff", units="in", width=12, height=6, dpi=300, compression = 'lzw')
